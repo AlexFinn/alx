@@ -1,0 +1,17 @@
+baseurl = "https://alxschwarz.com/"
+title = "∆LX"
+author = "Alexander Ivanov"
+copyright = "Copyright (c) 2015, alxschwrz; all rights reserved."
+[indexes]
+   tag = "tags"
+
+[params]
+  #Subtitle = "Your site's subtitle/tagline"
+  GithubID = "alexfinn"
+  TwitterID = "alxschwarz"
+  AnalyticsID = "5028cb21613f5d50de00000a"
+  DisqusShortname = "Your Disqus shortname"
+  Summary = false  # takes true or false
+  Content = false  # takes true or false
+  # if both are set to true, summary is shown.
+  # FooterMsg = "Copyright Me 2016. Powered by Hugo."

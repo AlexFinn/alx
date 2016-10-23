@@ -1,0 +1,4 @@
+#!/bin/bash
+
+hugo -t 'slim-alx' && rsync -avz --delete public/ alx01:/var/www/alxschwarz.com
+
