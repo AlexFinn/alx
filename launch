@@ -1,4 +1,0 @@
-#!/bin/bash
-
-hugo server -t 'slim-alx' --buildDrafts --watch
-

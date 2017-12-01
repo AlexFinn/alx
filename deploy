@@ -1,4 +1,0 @@
-#!/bin/bash
-
-hugo -t 'slim-alx' && rsync -avz --delete public/ sw01:/opt/www/alxschwarz.com
-
