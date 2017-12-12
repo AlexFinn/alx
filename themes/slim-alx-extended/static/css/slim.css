@@ -83,9 +83,10 @@ a {
   a:hover, a:focus {
     text-decoration: underline; }
 
-em {
+/*em {
   text-emphasis-style: circle;
   text-emphasis-position: under; }
+*/
 
 code {
   font-family: 'IBM Plex Mono', 'SFMono-Regular', 'Roboto Mono', Courier, monospace;
@@ -111,6 +112,7 @@ pre {
 pre code {
   font-family: 'IBM Plex Mono', 'SFMono-Regular', 'Roboto Mono', Courier, monospace;
   font-weight: 500;
+  font-size: 1.1em;
   padding: 0;
   color: #555;
   background-color: transparent;
@@ -178,9 +180,10 @@ button,
 .site-title {
   font-size: 1.5rem;
   font-weight: 700;
-  font-family: 'IBM Plex Sans', 'Helvetica Neue', Roboto; Arial, sans-serif; }
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Roboto, Arial, sans-serif; }
   .site-title a {
-    color: #333; }
+    color: #333;
+  }
 
 .nav {
   position: absolute;
