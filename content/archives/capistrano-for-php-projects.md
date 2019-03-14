@@ -4,6 +4,7 @@ tags = ["capistrano", "ruby", "php", "deployment"]
 date = "2014-04-28"
 type = "post"
 +++
+
 Some time ago I needed to find a solution for deploying PHP applications that our programmers wrote. Before the start of the project they used ftp to deploy. But it took too much unnecessary work and a long time. After some thought I decided to try capistrano. Alternatively I look at fabric but I was more familiar with capistrano earlier. And now I want to talk about using capistrano a little bit.
 
 As I wrote earlier we use Gentoo on our servers. For capistrano tasks we need installed ruby. It can be done via portage or rvm or rbenv. We use portage.
@@ -119,14 +120,14 @@ A number of saved project versions.
 
 To use or not to use sudo.
 
-    task :fix_file_permissions do 
-      run "sudo chown -R nginx:nginx #{deploy_to}" 
+    task :fix_file_permissions do
+      run "sudo chown -R nginx:nginx #{deploy_to}"
       run "sudo chmod -R ug=rwX,o= #{deploy_to}"
-    end 
+    end
 
 Task to set correct permissions on directories and files.
 
-    after "deploy:update", :fix_file_permissions  
+    after "deploy:update", :fix_file_permissions
 
 Run task after deploy.
 
@@ -200,5 +201,3 @@ We can use `cap -T` command to view list of capistrano tasks. For example:
     cap invoke                # Invoke a single command on the remote servers.
     cap multistage:prepare    # Stub out the staging config files.
     cap shell                 # Begin an interactive Capistrano session.
-
-
